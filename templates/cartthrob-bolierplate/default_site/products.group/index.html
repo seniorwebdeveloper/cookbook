@@ -1,0 +1,18 @@
+{embed="global_embeds/document_head"}
+
+<body>
+
+<div id="page">
+
+{embed="global_embeds/header"}
+
+<h1>Products</h1>
+
+{exp:channel:entries channel="products"}
+<h2><a href="{title_permalink='products/single'}">{title}</a></h2>
+{/exp:channel:entries}
+
+</div><!--END #page-->
+
+</body>
+</html>

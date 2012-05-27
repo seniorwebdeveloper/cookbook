@@ -1,0 +1,37 @@
+{embed="global_embeds/document_head"}
+
+<body>
+
+<div id="page">
+
+{embed="global_embeds/header"}
+
+<h1>Product</h1>
+
+{exp:channel:entries channel="products"}
+
+{exp:cartthrob:add_to_cart_form entry_id="{entry_id}"}
+<h2>{title}</h2>
+
+{product_description}
+
+<div>
+Quantity: <input type="text" name="quantity" size="5" value=""> 
+<input type="submit" value="Add to Cart">
+</div>
+
+{if product_price}
+<p>{product_price}</p>
+{/if}
+
+{item_options:select:product_options}
+<option value="{option}">{option_name} {price}</option>
+{/item_options:select:product_options}
+
+{/exp:cartthrob:add_to_cart_form}
+{/exp:channel:entries}
+
+</div><!--END #page-->
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{exp:channel:entries channel="blog|news|misc" disable="categories|category_fields|member_data|pagination|trackbacks" limit="1" orderby="title|date|most_recent_comment|random" sort="asc|desc" status="draft|open" search:field_name="not IS_EMPTY" dynamic="yes|no"}
+
+
+{/exp:channel:entries}
+
+{!-- 
+
+NOTES
+=====
+
+The “search:” parameter allows you to constrain Channel Entries output based on content within your fields. You specify which field to search by using the field’s short name immediately after “search:”. You can search based on whether a field is an exact match to your provided term or whether or not a field simply contains your term.
+
+Note: Only fields of the type “Text Input”, “Textarea”, and “Drop-down Lists” are searched with this parameter.
+
+see http://expressionengine.com/user_guide/modules/channel/channel_entries.html#search-field-name for more info.
+
+ --}

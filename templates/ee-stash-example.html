@@ -1,0 +1,35 @@
+{!-- PART 1 : Put the code below in the beginning of your template --}
+{exp:stash:set parse_tags="yes" replace="no" refresh="1440"}
+
+{!-- Stashing Channel Entries data example --}
+{!-- (use as many custom fields form the channel as you need) --}
+{exp:channel:entries channel="ENTERCHANNENAMEHERE" limit="1" disable="member_data|pagination|categories"} 
+{stash:page_title}{title}{/stash:page_title}
+{/exp:channel:entries}
+
+{!-- Stashing a custom value example --}
+{stash:my_custom_value}Hello world!{/stash:my_custom_value}
+
+{!-- Stashing a custom value example mixed with some markup --}
+{stash:my_custom_value_html}
+<h2>Hello world wrapped in a Header2 tag!</h2>
+{/stash:my_custom_value_html}
+
+{/exp:stash:set} 
+{!-- End PART 1 --} 
+
+{!-- Now, let's output some stashed data... --} 
+<html>
+<head>
+<title>{exp:stash:get name="page_title"}</title>
+</head>
+<body>
+
+<h1>{exp:stash:get name="page_title"}</h1>
+{exp:stash:get name="my_custom_value"}
+{exp:stash:get name="my_custom_value_html"}
+
+<p>Notice that the stashed page title is reused twice, in the title tag of the HTML and with the body part of the HTML.</p>
+
+</body>
+</html>

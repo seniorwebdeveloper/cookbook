@@ -1,0 +1,27 @@
+{embed="global_embeds/document_head"}
+
+<body>
+
+<div id="page">
+
+{embed="global_embeds/header"}
+
+<h1>The results of your order</h1>
+
+{exp:cartthrob:submitted_order_info}
+{if authorized}
+Your payment is a success!
+Transaction ID: {transaction_id}
+Your total: {cart_total}
+Your order ID: {order_id}
+{if:elseif declined}
+Your credit card was declined: {error_message}
+{if:elseif failed}
+Your payment failed: {error_message}
+{/if}
+{/exp:cartthrob:submitted_order_info}
+
+</div><!--END #page-->
+
+</body>
+</html>

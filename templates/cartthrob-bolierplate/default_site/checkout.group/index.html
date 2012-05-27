@@ -1,0 +1,22 @@
+{embed="global_embeds/document_head"}
+
+<body>
+
+<div id="page">
+
+{embed="global_embeds/header"}
+
+<h1>Checkout</h1>
+
+{exp:cartthrob:checkout_form return="checkout/order-complete"}
+
+{gateway_fields}
+
+<input type="submit" value="Checkout" />
+
+{/exp:cartthrob:checkout_form}
+
+</div><!--END #page-->
+
+</body>
+</html>
