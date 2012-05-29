@@ -10,3 +10,9 @@ This is a collection of short snippets that can be used in your everyday EE deve
 
 ##[Templates](https://github.com/expressionengine/cookbook/wiki/Templates)
 Useful templates that can either help people learn how to implement EE in their projects or use to get started on a project.
+
+## [Gists](https://github.com/expressionengine/cookbook/wiki/Gists)
+Useful gists that have been found on github.
+
+##[Plugins](https://github.com/expressionengine/cookbook/wiki/Plugins)
+A list of plugins on github. 
