@@ -1,6 +1,6 @@
 #EE-Cookbook
 
-A collection of snippets and templates for Expression Engine. Please feel free to contribute to make this a nice and practical copy/paste resource for Expression Engine.
+A collection of snippets and templates for ExpressionEngine. Please feel free to contribute to make this a nice and practical copy/paste resource for ExpressionEngine.
 
 ##[Wiki](https://github.com/expressionengine/cookbook/wiki)
 This provides a quick reference for all the snippets and templates to help you quickly find what your looking for. There are also sections for useful EE gists and plugins which are stored at github.
@@ -15,4 +15,4 @@ Useful templates that can either help people learn how to implement EE in their 
 Useful gists that have been found on github.
 
 ##[Plugins](https://github.com/expressionengine/cookbook/wiki/Plugins)
-A list of plugins on github. 
+A list of EE plugins on github. 
